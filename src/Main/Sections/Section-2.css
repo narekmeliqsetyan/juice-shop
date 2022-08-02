@@ -1,0 +1,147 @@
+body {
+    font-family: Open Sans, Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-2 {
+    position: relative;
+    padding-top: 20%;
+    padding-right: 0px;
+    padding-bottom: 20%;
+    padding-left: 0px;
+}
+
+.section-2-paraller-bg-wrap {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.section-2-paraller-bg {
+    display: block;
+    background-image: url('https://www.elegantthemes.com/layouts/wp-content/uploads/2018/05/juice-bar-01.jpg');
+    height: 1161.65px;
+    width: 100%;
+    /* transform: translate(0px, -409px); */
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.section-2-row {
+    transition: 1s;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+    transform: scale3d(0.9, 0.9, 0.9);
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.86);
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+}
+
+.section-2-row.active {
+    transition: 1s;
+    opacity: 1;
+    animation-timing-function: ease-in-out;
+    transform: scale3d(1, 1, 1)
+}
+
+.section-2-column {
+    position: relative;
+    z-index: 2;
+    min-height: 1px;
+    float: left;
+    width: 100%;
+}
+
+.section-2-module {
+    max-width: 600px;
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-2-promo-description {
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.section-2-promo-description h2 {
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 3px;
+    line-height: 1.4em;
+    color: #333;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+
+.section-2-promo-description div {
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.section-2-promo-description>div>p {
+    padding-bottom: 0;
+}
+
+.promo-button-wrapper {
+    text-align: center;
+}
+
+.promo-button {
+    padding: 0.3em 1em;
+    color: white;
+    border-radius: 30px;
+    border: 10px black solid;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #000000;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1em;
+}
+
+
+@media (max-width: 980px) {
+    .section-2-row {
+        max-width: 1080px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .section-2-module {
+        margin-top: 0px;
+    }
+}
